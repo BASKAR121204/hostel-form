@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submit Form</title>
+    <title>User Information Form</title>
 </head>
 <body>
-    <h2 style="text-align: center;">Hello World</h2>
-    <form action="/process_get" method="GET">
-        First Name: <input type="text" name="first_name"><br>
-        Last Name: <input type="text" name="last_name"><br>
-        <input type="submit" value="Submit">
+
+    <h2>Hostel Student Information</h2>
+    <form action="/process_get" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" placeholder="Enter First Name" required><br><br>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Enter Last Name" required><br><br>
+
+        <label for="room_no">Room Number:</label>
+        <input type="text" id="room_no" name="room_no" placeholder="Enter Room Number" required><br><br>
+
+        <label for="college">College:</label> <br>
+        <label>
+            <input type="radio" name="college" value="college_of_engineering" required> college of engineering
+        </label><br>
+        <label>
+            <input type="radio" name="college" value="school_of_engineering" required> school of engineering
+        </label><br>
+        <label>
+            <input type="radio" name="college" value="pharmacy" required> pharmacy
+        </label><br>
+        <label>
+            <input type="radio" name="college" value="polytecnic" required> polytecnic
+        </label> <br>
+        <label>
+            <input type="radio" name="college" value="arts" required>Arts
+        </label>
+        <br><br>
+
+        <label for="department">Department:</label>
+        <input type="text" id="department" name="department" placeholder="Enter your department" required><br><br>
+
+        <label for="year">year:</label>
+        <input type="text" id="year" name="year" placeholder="Enter your name" required><br><br>
+
+        <label for="register_no">register_no:</label>
+        <input type="text" id="register_no" name="register_no" placeholder="Enter your register number" required><br><br>
+        <button type="submit">Submit</button>
     </form>
+
 </body>
 </html>
